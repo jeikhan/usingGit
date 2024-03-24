@@ -34,6 +34,23 @@ public class ArrayJava {
         }
     }
 
+    public void deleteItem(int index) {
+        System.out.println("Array before deleting");
+        for (long l : arr) {
+            System.out.print(l + " ");
+        }
+        System.out.println(" ");
+        System.out.println("Array after deleting");
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (i == index) {
+                for (int j = i; j < arr.length - 1; j++) {
+                    arr[j] = arr[j + 1];
+                }
+            }
+            System.out.print(arr[i] + " ");
+        }
+    }
+
     public static void main(String[] args) {
         ArrayJava arrayJava = new ArrayJava();
         arrayJava.searchIndexNumber(11);
