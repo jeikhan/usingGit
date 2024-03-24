@@ -51,8 +51,14 @@ public class ArrayJava {
         }
     }
 
+    public void showSize() {
+        System.out.println(arr.length);
+    }
+
     public static void main(String[] args) {
         ArrayJava arrayJava = new ArrayJava();
         arrayJava.searchIndexNumber(11);
+        arrayJava.deleteItem(5);
+        arrayJava.showSize();
     }
 }
