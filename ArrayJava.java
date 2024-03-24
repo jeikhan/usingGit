@@ -57,8 +57,8 @@ public class ArrayJava {
 
     public static void main(String[] args) {
         ArrayJava arrayJava = new ArrayJava();
+        arrayJava.showSize();
         arrayJava.searchIndexNumber(11);
         arrayJava.deleteItem(5);
-        arrayJava.showSize();
     }
 }
