@@ -39,4 +39,10 @@ public class ClassDataArray {
         }
         return result;
     }
+    
+    public void displayA() {
+        for (int i = 0; i < elements; i++) {
+            a[i].displayPerson();
+        }
+    }
 }
