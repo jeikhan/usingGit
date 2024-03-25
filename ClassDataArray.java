@@ -6,7 +6,7 @@ public class ClassDataArray {
         a = new Person[max];
         elements = 0;
     }
-    
+
     public Person find(String searchLast) {
         Person result = null;
         int i;
@@ -17,5 +17,10 @@ public class ClassDataArray {
             }
         }
         return result;
+    }
+
+    public void insert(String last, String first, int age) {
+        a[elements] = new Person(last, first, age);
+        elements++;
     }
 }
