@@ -23,4 +23,20 @@ public class ClassDataArray {
         a[elements] = new Person(last, first, age);
         elements++;
     }
+
+    public boolean delete(String searchLast) {
+        int i;
+        boolean result = false;
+        for (i = 0; i < elements; i++) {
+            if (a[i].getLast().equals(searchLast)) {
+                for (int j = i; j < elements; j++) {
+                    a[j] = a[j + 1];
+                }
+                elements--;
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 }
