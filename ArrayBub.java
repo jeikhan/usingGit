@@ -15,13 +15,13 @@ public class ArrayBub {
     public void display() {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
-            System.out.println(" ");
         }
+        System.out.println(" ");
     }
 
     public void bubbleSort() {
         int in, out;
-        for (out = count - 1; out > 1; out--) {
+        for (out = count - 1; out > 0; out--) {
             for (in = 0; in < out; in++) {
                 if (array[in] > array[in + 1]) {
                     swap(in, in + 1);
